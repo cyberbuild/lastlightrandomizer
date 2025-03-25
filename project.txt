@@ -1,0 +1,63 @@
+Develop a mobile application that display a color coded circle. Three rings. The outer ring is green, the middle ring is blue, and the inner ring is pink. Inside each ring there a number of planets that are place around the ring in a random order.
+
+The amount of planets depends on the amount of players playing.
+
+A five player game would have 5 planets.
+
+We want to create randomly select the planets for each ring and place them around the ring in a fixed spot. Starting from the 12'oclock position and rotating clockwise.
+
+
+
+5 player game setup
+--------------------
+19 planets
+
+Outer Ring - 7
+Middle Ring - 8
+Inner Ring - 4
+
+The planets are randomly selected from a pool of planets. Each planet has a color combo and size. There is one special planet which has all four colors.
+
+Planet Size and Colours
+------------------------
+Small - Blue
+Small - Blue, Green
+Small - Blue, Green, Yellow
+Small - Green
+Small - Green, Red
+Small - Green, Red
+Small - Green, Red
+Small - Green, Yellow
+Small - Yellow
+Medium - Blue, Green
+Medium - Blue, Green, Red
+Medium - Blue, Green, Red
+Medium - Blue, Green, Red
+*Medium - Blue, Green, Red, Yellow*
+Medium - Blue, Yellow
+Medium - Blue, Yellow
+Medium - Green, Yellow
+Medium - Green, Yellow
+Medium - Green, Yellow
+Medium - Red, Yellow
+Large - Blue, Green
+Large - Blue, Green
+Large - Blue, Green, Red
+Large - Blue, Green, Yellow
+Large - Blue, Red
+Large - Blue, Yellow
+Large - Green, Red, Yellow
+Large - Green, Yellow
+
+
+
+Other Player Counts
+----------------------
+
+2 Player = 8 planets, O = 2, M = 4, I = 2
+3 Player = 10 planets, O = 3, M = 4, I = 3
+4 player = 15 planets, O = 6, M = 6, I = 3
+5 Player = 19 planets, O = 7, M = 8, I = 4
+6 Player = 25 planets, , O = 12, M = 8, I = 5
+7 and 8 Player = 25 planets, , O = 11, M = 10, I = 5
+
