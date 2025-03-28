@@ -1,22 +1,35 @@
-Develop a mobile application that display a color coded circle. Three rings. The outer ring is green, the middle ring is blue, and the inner ring is pink. Inside each ring there a number of planets that are place around the ring in a random order.
+Last Light Randomizer
 
-The amount of planets depends on the amount of players playing.
+Project Goal:
+Create a mobile application to randomly set up the board for the Last Light board game, following specific rules for planet distribution.
 
-A five player game would have 5 planets.
+Game Components:
+- 3 concentric rings (inner, middle, outer) of different colors
+- 28 planets across three size categories (small, medium, large)
+- Planets feature 1-4 colors (blue, green, red, yellow)
+- One special planet has all four colors
 
-We want to create randomly select the planets for each ring and place them around the ring in a fixed spot. Starting from the 12'oclock position and rotating clockwise.
+Setup Rules:
+1. The number of planets placed depends on the player count (1-8 players)
+2. The special planet must always be included
+3. Each ring has a specific planet capacity based on player count
+4. Planet placement around each ring should be evenly spaced
 
+Player Count Configurations:
+- 1 player: 5 planets total (1 outer, 3 middle, 1 inner)
+- 2 players: 8 planets total (2 outer, 4 middle, 2 inner)
+- 3 players: 10 planets total (3 outer, 4 middle, 3 inner)
+- 4 players: 15 planets total (6 outer, 6 middle, 3 inner)
+- 5 players: 19 planets total (7 outer, 8 middle, 4 inner)
+- 6 players: 25 planets total (12 outer, 8 middle, 5 inner)
+- 7-8 players: 26 planets total (11 outer, 10 middle, 5 inner)
 
-
-5 player game setup
---------------------
-19 planets
-
-Outer Ring - 7
-Middle Ring - 8
-Inner Ring - 4
-
-The planets are randomly selected from a pool of planets. Each planet has a color combo and size. There is one special planet which has all four colors.
+Application Requirements:
+- Mobile UI with color-coded rings
+- Option to select player count (1-8)
+- Visual representation of planets with appropriate sizes and colors
+- Button to regenerate a new random setup
+- Random generation of planet placements for each game
 
 Planet Size and Colours
 ------------------------
@@ -48,16 +61,4 @@ Large - Blue, Red
 Large - Blue, Yellow
 Large - Green, Red, Yellow
 Large - Green, Yellow
-
-
-
-Other Player Counts
-----------------------
-
-2 Player = 8 planets, O = 2, M = 4, I = 2
-3 Player = 10 planets, O = 3, M = 4, I = 3
-4 player = 15 planets, O = 6, M = 6, I = 3
-5 Player = 19 planets, O = 7, M = 8, I = 4
-6 Player = 25 planets, , O = 12, M = 8, I = 5
-7 and 8 Player = 25 planets, , O = 11, M = 10, I = 5
 
