@@ -37,23 +37,23 @@ class GameConfigManager {
   /// The value is the RingConfig specifying how many planets go in each ring
   static final Map<int, RingConfig> playerConfigurations = {
     // Configuration for 2 players: 8 planets total (2 outer, 4 middle, 2 inner)
-    2: RingConfig(outerRingCount: 2, middleRingCount: 4, innerRingCount: 2),
+    2: const RingConfig(outerRingCount: 2, middleRingCount: 4, innerRingCount: 2),
     
     // Configuration for 3 players: 10 planets total (3 outer, 4 middle, 3 inner)
-    3: RingConfig(outerRingCount: 3, middleRingCount: 4, innerRingCount: 3),
+    3: const RingConfig(outerRingCount: 3, middleRingCount: 4, innerRingCount: 3),
     
     // Configuration for 4 players: 15 planets total (6 outer, 6 middle, 3 inner)
-    4: RingConfig(outerRingCount: 6, middleRingCount: 6, innerRingCount: 3),
+    4: const RingConfig(outerRingCount: 6, middleRingCount: 6, innerRingCount: 3),
     
     // Configuration for 5 players: 19 planets total (7 outer, 8 middle, 4 inner)
-    5: RingConfig(outerRingCount: 7, middleRingCount: 8, innerRingCount: 4),
+    5: const RingConfig(outerRingCount: 7, middleRingCount: 8, innerRingCount: 4),
     
     // Configuration for 6 players: 25 planets total (12 outer, 8 middle, 5 inner)
-    6: RingConfig(outerRingCount: 12, middleRingCount: 8, innerRingCount: 5),
+    6: const RingConfig(outerRingCount: 12, middleRingCount: 8, innerRingCount: 5),
     
     // Configuration for 7-8 players: 26 planets total (11 outer, 10 middle, 5 inner)
-    7: RingConfig(outerRingCount: 11, middleRingCount: 10, innerRingCount: 5),
-    8: RingConfig(outerRingCount: 11, middleRingCount: 10, innerRingCount: 5),
+    7: const RingConfig(outerRingCount: 11, middleRingCount: 10, innerRingCount: 5),
+    8: const RingConfig(outerRingCount: 11, middleRingCount: 10, innerRingCount: 5),
   };
 
   /// Retrieves the appropriate ring configuration for the specified player count.

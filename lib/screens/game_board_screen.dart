@@ -34,11 +34,11 @@ class GameBoardScreen extends StatelessWidget {
       body: Column(
         children: [
           // Game board area
-          Expanded(
+          const Expanded(
             flex: 5,
             // Using const for this widget subtree improves performance
             // since these widgets don't change based on external state
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.all(16.0),
               child: Center(
                 child: AspectRatio(

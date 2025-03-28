@@ -2,12 +2,9 @@
 //
 // Tests verify that the application renders correctly and contains expected elements.
 
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:provider/provider.dart';
 
 import 'package:lastlightrandomizer/main.dart';
-import 'package:lastlightrandomizer/state/game_provider.dart';
 
 void main() {
   testWidgets('Last Light Randomizer app smoke test', (WidgetTester tester) async {

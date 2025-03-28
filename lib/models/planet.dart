@@ -78,46 +78,46 @@ class PlanetFactory {
   static List<Planet> createAllPlanets() {
     return [
       // Small planets (9 total)
-      Planet(id: 's1', size: PlanetSize.small, colors: [PlanetColor.blue]),
-      Planet(id: 's2', size: PlanetSize.small, colors: [PlanetColor.blue, PlanetColor.green]),
-      Planet(id: 's3', size: PlanetSize.small, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 's4', size: PlanetSize.small, colors: [PlanetColor.green]),
-      Planet(id: 's5', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
-      Planet(id: 's6', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
-      Planet(id: 's7', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
-      Planet(id: 's8', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 's9', size: PlanetSize.small, colors: [PlanetColor.yellow]),
+      const Planet(id: 's1', size: PlanetSize.small, colors: [PlanetColor.blue]),
+      const Planet(id: 's2', size: PlanetSize.small, colors: [PlanetColor.blue, PlanetColor.green]),
+      const Planet(id: 's3', size: PlanetSize.small, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 's4', size: PlanetSize.small, colors: [PlanetColor.green]),
+      const Planet(id: 's5', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 's6', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 's7', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 's8', size: PlanetSize.small, colors: [PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 's9', size: PlanetSize.small, colors: [PlanetColor.yellow]),
       
       // Medium planets (11 total)
-      Planet(id: 'm1', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green]),
-      Planet(id: 'm2', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
-      Planet(id: 'm3', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
-      Planet(id: 'm4', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 'm1', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green]),
+      const Planet(id: 'm2', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 'm3', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 'm4', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
       
       // Special planet (medium size with all 4 colors)
-      Planet(
+      const Planet(
         id: 'm5', 
         size: PlanetSize.medium, 
         colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red, PlanetColor.yellow], 
         isSpecial: true
       ),
       
-      Planet(id: 'm6', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.yellow]),
-      Planet(id: 'm7', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.yellow]),
-      Planet(id: 'm8', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 'm9', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 'm10', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 'm11', size: PlanetSize.medium, colors: [PlanetColor.red, PlanetColor.yellow]),
+      const Planet(id: 'm6', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.yellow]),
+      const Planet(id: 'm7', size: PlanetSize.medium, colors: [PlanetColor.blue, PlanetColor.yellow]),
+      const Planet(id: 'm8', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 'm9', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 'm10', size: PlanetSize.medium, colors: [PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 'm11', size: PlanetSize.medium, colors: [PlanetColor.red, PlanetColor.yellow]),
       
       // Large planets (8 total)
-      Planet(id: 'l1', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green]),
-      Planet(id: 'l2', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green]),
-      Planet(id: 'l3', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
-      Planet(id: 'l4', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.yellow]),
-      Planet(id: 'l5', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.red]),
-      Planet(id: 'l6', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.yellow]),
-      Planet(id: 'l7', size: PlanetSize.large, colors: [PlanetColor.green, PlanetColor.red, PlanetColor.yellow]),
-      Planet(id: 'l8', size: PlanetSize.large, colors: [PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 'l1', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green]),
+      const Planet(id: 'l2', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green]),
+      const Planet(id: 'l3', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.red]),
+      const Planet(id: 'l4', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.green, PlanetColor.yellow]),
+      const Planet(id: 'l5', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.red]),
+      const Planet(id: 'l6', size: PlanetSize.large, colors: [PlanetColor.blue, PlanetColor.yellow]),
+      const Planet(id: 'l7', size: PlanetSize.large, colors: [PlanetColor.green, PlanetColor.red, PlanetColor.yellow]),
+      const Planet(id: 'l8', size: PlanetSize.large, colors: [PlanetColor.green, PlanetColor.yellow]),
     ];
   }
 }
