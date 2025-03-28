@@ -6,7 +6,7 @@ A Flutter application that randomizes game setups for the Last Light board game,
 
 Last Light Randomizer assists players of the Last Light board game by:
 
-- Supporting 1-8 player games
+- Supporting 2-8 player games
 - Randomly placing planets on three concentric rings
 - Displaying the game board with color-coded rings and planets
 - Allowing regeneration of random setups
