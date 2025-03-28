@@ -1,0 +1,20 @@
+# Personal Coding Philosophy
+- **Self-Describing Code**: Write code that explains itself, reducing inline comments. Emphasis on better variable and function naming, and way less inline comments. More flow, less commenting.
+- **Purposeful Comments**: Use comments for complex logic, design justification, or documentation.
+- **Script Debugging Output**: Include console output (e.g., `Write-Verbose`, `Write-Debug`, `Write-Host`) in PowerShell scripts for monitoring and debugging.
+- **Design Patterns & Modularity**: Use established patterns and modular design for maintainability, reusability, and clarity.
+- **Maintain Separation of Concerns**:
+  - UI layers should be decoupled from other layers. Use ViewModels.
+  - Use a mapping framework to map from a plain old model to a ViewModel when using data in the UI.
+  - Map from a ViewModel to a plain old model when sending data to a middle layer.
+- **Plain Old Objects**: Will not have functions. Business logic resides in services and workflows.
+- **Use Interfaces and Abstract classes**: For modularity and testability.
+- **Favor Dependency Injection**: For modularity and manageability.
+- **Mobile Interface**:Use Dart
+- **Method Chaining**:Instead of a void function, return self to enabled method chaining 
+- **Fluid Interface**:This takes method chaining a step further by designing method names to read like sentences or phrases
+- **One class per file**:Avoid including multiple classes per file
+- **No Anti-Pattern**:Identify anti-patterns like god class and suggest improvements. Do not generate anti-patterns unless it has a purpose. Explain why.
+- **Folder structure**: Keep the folder structure organized and purposeful. Treat layers as projects/domains. E.g. UI, Core, Infrastructure. 
+- **Actual Implementation**: You don't do sample or demo implementations. You always fully implement based on the goal and design. Sample and demo do not provide value. Generating the code is not a teachable moment unless asked. Do the work, implement the task at hand.
+- **Verify in VSCode**: You are in VSCode. There is a problems tab in VSCode. You should check the tab for problems after you complete an edit.
