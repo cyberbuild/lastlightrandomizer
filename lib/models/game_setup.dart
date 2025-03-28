@@ -62,7 +62,8 @@ class GameSetup {
   /// 2. Shuffles all available planets
   /// 3. Ensures the special planet (with all 4 colors) is included
   /// 4. Selects the appropriate number of random planets
-  /// 5. Distributes planets to each ring (outer → middle → inner)
+  /// 5. Shuffles all selected planets to randomize the special planet's position
+  /// 6. Distributes planets to each ring (outer → middle → inner)
   void generateRandomSetup() {
     // Get the specific configuration for this player count
     final playerConfig = GameConfigManager.getConfigForPlayerCount(playerCount);
@@ -77,17 +78,21 @@ class GameSetup {
     );
     shuffledPlanetPool.remove(specialPlanet);
     
-    // Start with the special planet and add other randomly selected planets
-    final selectedPlanetsForGame = <Planet>[specialPlanet];
-    
     // Calculate how many additional planets we need beyond the special planet
     final remainingPlanetsNeeded = playerConfig.totalPlanets - 1;
     
-    // Add the remaining planets needed from the shuffled pool
-    selectedPlanetsForGame.addAll(selectRandomPlanets(
+    // Add randomly selected planets to our game set
+    final randomPlanets = selectRandomPlanets(
       remainingPlanetsNeeded,
       shuffledPlanetPool
-    ));
+    );
+    
+    // Create the final planet list with the special planet included
+    final selectedPlanetsForGame = <Planet>[specialPlanet, ...randomPlanets];
+    
+    // Shuffle the combined list to randomize the special planet's position
+    // This ensures the special planet could end up in any ring
+    selectedPlanetsForGame.shuffle(_random);
 
     // Distribute planets to rings from outer to inner (game board outside to center)
     

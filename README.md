@@ -111,6 +111,59 @@ flutter run -d android
 flutter test
 ```
 
+## Building Release Versions
+
+### Windows Release Build
+
+To create a production-ready Windows release build, you have two options:
+
+#### Option 1: Using VS Code Task (Recommended)
+
+1. Open the Command Palette (`Ctrl+Shift+P`)
+2. Type "Tasks: Run Task"
+3. Select "Build Windows Release"
+4. The terminal will show the build progress and completion message
+
+The release build will be created at:
+```
+build\windows\runner\Release\
+```
+
+This folder contains:
+- `lastlightrandomizer.exe` - The main executable application
+- Supporting DLL files and resources
+
+#### Option 2: Using Command Line
+
+```bash
+# Navigate to your project directory
+cd c:\Projects\cyberbuild\lastlightrandomizer
+
+# Clean the project first (recommended)
+flutter clean
+
+# Build the Windows release
+flutter build windows --release
+```
+
+### Distributing Your Windows App
+
+To distribute your app to other Windows users:
+
+1. Copy the entire contents of the `build\windows\runner\Release\` folder
+2. Create a ZIP archive or installer containing these files
+3. Users can run the application by executing `lastlightrandomizer.exe`
+
+#### Release Build Features
+
+The release build offers several advantages:
+- Optimized performance with native code compilation
+- Smaller binary size through code stripping
+- Improved startup time
+- No debug tools or console output
+
+**Note:** Users don't need Flutter installed to run your release build, but they will need the Visual C++ Redistributable packages which are commonly installed on most Windows systems.
+
 ## Development Requirements
 
 - Flutter SDK 3.13.0 or higher
