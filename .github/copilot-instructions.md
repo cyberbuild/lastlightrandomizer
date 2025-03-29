@@ -1,6 +1,6 @@
 # Personal Coding Philosophy
 - **Self-Describing Code**: Write code that explains itself, reducing inline comments. Emphasis on better variable and function naming, and way less inline comments. More flow, less commenting.
-- **Method Chaining**:Instead of a void function, return self to enabled method chaining 
+- **Method Chaining**:Instead of a void function, return self to enable method chaining 
 - **Fluid Interface**:This takes method chaining a step further by designing method names to read like sentences or phrases
 - **Purposeful Comments**: Use comments for complex logic, design justification, or necessary documentation.
 - **Script Debugging Output**: Include console output (e.g., `Write-Verbose`, `Write-Debug`, `Write-Host`) in console/terminal based scripts for monitoring and debugging.
